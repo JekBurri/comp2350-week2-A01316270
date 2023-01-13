@@ -14,6 +14,7 @@ const dbConfig = {
 var database = mysql.createPool(dbConfig);
 
 async function printMySQLVersion() {
+	console.log("this sucks")
 	let sqlQuery = `
 		SHOW VARIABLES LIKE 'version';
 	`;
